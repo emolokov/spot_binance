@@ -7,6 +7,7 @@ import shutil
 from alive_progress import alive_bar
 import os
 
+vvod=input('1. Сбор данных')
 def f1():
     if os.path.exists('data'):
         shutil.rmtree('data')
@@ -75,5 +76,10 @@ def f1():
             bar2()
 
 
-f1()
+if int(vvod)==1:
+    f1()
+else:
+    print('Введите исправную команду')
+
+
 
